@@ -1,0 +1,151 @@
+@import 'globals';
+
+
+header{
+  .topHeader{
+    height: 127px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .headerLeft{
+        display: flex;
+        .logoDiv{
+          display: flex;
+          .logoimg{
+            width: 60px;
+            height: 60px;
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+          .logoText{
+            display: flex;
+            flex-direction: column;
+            padding-left: 13px;
+            .blueBig{
+              line-height: 0.94;
+              color: $blue;
+              font-size: 34px;
+              font-weight: 500;
+              text-align: left;  
+            }
+            .logoSub{
+              font-size: 12px;
+              font-weight: 500;
+              color: $dark;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+      nav{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        @media (min-width: 360px){
+          &{
+            display: none;
+          }
+        }
+        .socialIcons{
+          display: flex;
+          gap: 30px;
+          .socialIcon{
+            width: 12px;
+            height: 12px;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+  .bottomHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 82px;
+    background: #f3f7f9;
+    @media (min-width: 360px){
+      &{
+        display: none;
+      }
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (min-width: 360px){
+        nav{
+          display: none;
+        }
+      }
+      nav{
+        ul{
+          display: flex;
+          .active{
+            background: linear-gradient(to right, #4867c0, #329fec);
+            a{
+              color: #fff;
+            }
+          }
+          li{
+            margin-right: 26px;
+            &:hover{
+              background: linear-gradient(to right, #4867c0, #329fec);
+            }
+            &:hover a{
+              color: #fff;
+            }
+            a{
+              display: block;
+              position: relative;
+              height: 100%;
+              line-height: 82px;
+              font-size: 16px;
+              font-weight: 500;
+              color: #4c4c4c;
+              padding-left: 11px;
+              padding-right: 8px;
+              z-index: 1;
+            }
+          }
+        }
+      }
+      .headerRight{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        .searchDiv{
+          width: 20px;
+          height: 20px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.blueButton{
+  width: 205px;
+  height: 52px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 5px;
+  background: linear-gradient(to right, #4867c0, #329fec);
+  border: none;
+  a{
+    color: $white;
+  }
+}
