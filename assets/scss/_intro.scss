@@ -1,0 +1,58 @@
+.intro{
+  padding-left: 104px;
+  padding-right: 104px;
+  width: 100%;
+  background: #FFFFFF;
+  padding-top: 115px;
+  padding-bottom: 67px;
+  @media (min-width: 380px){
+    &{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  .introCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .introCard{
+      background: #f3f7f9;
+      margin-bottom: 48px;
+      width: 100%;
+      @media (min-width: 767px){
+        &{
+          width: calc((100% - 30px) / 2);
+        }
+      }
+      @media (min-width: 1300px){
+        &{
+          width: calc((100% - 60px) / 3);
+        }
+      }
+      .introBody {
+        padding-left: 39px;
+        padding-top: 33px;
+        padding-bottom: 39px;      
+        .introTitle {
+          position: relative;
+          font-size: 24px;
+          font-weight: 500;
+          color: #4c4c4c;
+          z-index: 1;
+        }
+        .introSubtitle{
+          font-size: 14px;
+          font-weight: 500;
+          color: #888888;
+          margin-top: -1px;
+          padding-left: 1px;
+        }
+        }
+      .introImg{
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

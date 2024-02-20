@@ -1,0 +1,39 @@
+.hero{
+  position: absolute;
+  top: 42%;
+  width: 100%;
+  .homeContent{
+    max-width: 870px;
+    margin: 0 15px;
+    .homeDate {
+      font-size: 18px;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .homeTitle {
+      font-size: 60px;
+      font-weight: 500;
+      color: #FFFFFF;
+      margin-top: -5px;
+      line-height: 1.2;
+    }
+    .homeLocation {
+      font-size: 36px;
+      font-weight: 500;
+      color: #FFFFFF;
+      margin-top: -13px;
+    }
+    .homeText {
+      font-size: 14px;
+      font-weight: 500;
+      color: #FFFFFF;
+      line-height: 2.14;
+      margin-top: 4px;
+    }
+    .homeButtons {
+      margin-top: 58px;
+      display: flex;
+      gap: 12px;
+    }
+  }
+}

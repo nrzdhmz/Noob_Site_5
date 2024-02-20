@@ -1,0 +1,12 @@
+.blueButton{
+  width: 205px;
+  height: 52px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 5px;
+  background: linear-gradient(to right, #4867c0, #329fec);
+  border: none;
+  a{
+    color: $white;
+  }
+}

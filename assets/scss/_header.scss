@@ -1,13 +1,27 @@
 @import 'globals';
 
-
+.home{
+  background-image: url(../img/index.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
 header{
+  z-index: 999;
   .topHeader{
-    height: 127px;
+    background-color: #fff;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60px;
+    @media (min-width: 1000px){
+      &{
+        height: 127px;
+      }
+    }
     .container{
       display: flex;
       align-items: center;
@@ -16,9 +30,17 @@ header{
         display: flex;
         .logoDiv{
           display: flex;
+          align-items: center;
           .logoimg{
-            width: 60px;
             height: 60px;
+            display: flex;
+            align-items: center;
+            width: 40px;
+            @media (min-width: 1000px){
+              &{
+                width: 60px;
+              }
+            }
             img{
               width: 100%;
               height: auto;
@@ -26,34 +48,48 @@ header{
           }
           .logoText{
             display: flex;
+            justify-content: center;
             flex-direction: column;
             padding-left: 13px;
             .blueBig{
               line-height: 0.94;
               color: $blue;
-              font-size: 34px;
+              font-size: 13px;
               font-weight: 500;
-              text-align: left;  
+              text-align: left;
+              @media (min-width: 576px){
+                &{
+                  font-size: 24px;
+                }
+              }
+              @media (min-width: 1000px){
+                &{
+                  font-size: 34px;
+                }
+              }
             }
             .logoSub{
-              font-size: 12px;
               font-weight: 500;
               color: $dark;
               margin-top: 5px;
+              font-size: 9px;
+              @media (min-width: 576px){
+                &{
+                  font-size: 12px;
+                }
+              }
             }
           }
         }
       }
       nav{
-        display: flex;
+        display: none;
         align-items: center;
         height: 100%;
-        @media (min-width: 360px){
-          &{
-            display: none;
-          }
+        @media (min-width: 1000px){
+            display: flex;
         }
-        .socialIcons{
+        .socialIcons{ 
           display: flex;
           gap: 30px;
           .socialIcon{
@@ -68,27 +104,36 @@ header{
         }
       }
     }
+    .hamburger{
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      @media (min-width: 1000px){
+        display: none;
+      }
+      .bar{
+        width: 15px;
+        height: 2px;
+        background-color: black;
+      }
+    }
   }
   .bottomHeader{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 82px;
     background: #f3f7f9;
-    @media (min-width: 360px){
-      &{
-        display: none;
-      }
-    }
+    @media (min-width: 1000px){
+        display: flex;
+        }
     .container{
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: space-between;
-      @media screen and (min-width: 360px){
-        nav{
-          display: none;
-        }
-      }
+      @media (min-width: 1000px){
+          display: flex;
+          }
       nav{
         ul{
           display: flex;
