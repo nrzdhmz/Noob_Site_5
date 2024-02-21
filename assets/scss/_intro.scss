@@ -1,16 +1,22 @@
 .intro{
-  padding-left: 104px;
-  padding-right: 104px;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 100%;
   background: #FFFFFF;
   padding-top: 115px;
   padding-bottom: 67px;
-  @media (min-width: 380px){
-    &{
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+  @media (min-width: 576px){
+    padding-left: 30px;
+    padding-right: 30px;
   }
+  @media (min-width: 767px){
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media (min-width: 991px){
+      padding-left: 104px;
+      padding-right: 104px;
+    }
   .introCards{
     display: flex;
     flex-wrap: wrap;
@@ -20,14 +26,10 @@
       margin-bottom: 48px;
       width: 100%;
       @media (min-width: 767px){
-        &{
-          width: calc((100% - 30px) / 2);
-        }
+        width: calc((100% - 30px) / 2);
       }
       @media (min-width: 1300px){
-        &{
-          width: calc((100% - 60px) / 3);
-        }
+        width: calc((100% - 60px) / 3);
       }
       .introBody {
         padding-left: 39px;

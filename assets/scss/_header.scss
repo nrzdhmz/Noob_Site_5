@@ -28,59 +28,6 @@ header{
       justify-content: space-between;
       .headerLeft{
         display: flex;
-        .logoDiv{
-          display: flex;
-          align-items: center;
-          .logoimg{
-            height: 60px;
-            display: flex;
-            align-items: center;
-            width: 40px;
-            @media (min-width: 1000px){
-              &{
-                width: 60px;
-              }
-            }
-            img{
-              width: 100%;
-              height: auto;
-            }
-          }
-          .logoText{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            padding-left: 13px;
-            .blueBig{
-              line-height: 0.94;
-              color: $blue;
-              font-size: 13px;
-              font-weight: 500;
-              text-align: left;
-              @media (min-width: 576px){
-                &{
-                  font-size: 24px;
-                }
-              }
-              @media (min-width: 1000px){
-                &{
-                  font-size: 34px;
-                }
-              }
-            }
-            .logoSub{
-              font-weight: 500;
-              color: $dark;
-              margin-top: 5px;
-              font-size: 9px;
-              @media (min-width: 576px){
-                &{
-                  font-size: 12px;
-                }
-              }
-            }
-          }
-        }
       }
       nav{
         display: none;
@@ -192,5 +139,59 @@ header{
   border: none;
   a{
     color: $white;
+  }
+}
+
+.logoDiv{
+  display: flex;
+  align-items: center;
+  .logoimg{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    @media (min-width: 1000px){
+      &{
+        width: 60px;
+      }
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .logoText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 13px;
+    .blueBig{
+      line-height: 0.94;
+      color: $blue;
+      font-size: 13px;
+      font-weight: 500;
+      text-align: left;
+      @media (min-width: 576px){
+        &{
+          font-size: 24px;
+        }
+      }
+      @media (min-width: 1000px){
+        &{
+          font-size: 34px;
+        }
+      }
+    }
+    .logoSub{
+      font-weight: 500;
+      color: $dark;
+      margin-top: 5px;
+      font-size: 9px;
+      @media (min-width: 576px){
+        &{
+          font-size: 12px;
+        }
+      }
+    }
   }
 }
