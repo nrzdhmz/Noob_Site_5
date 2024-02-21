@@ -416,4 +416,359 @@ header .bottomHeader .container .headerRight .searchDiv img {
 }
 .intro .introCards .introCard .introImg img {
   width: 100%;
+}
+
+.pricing {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.pricing .pricingBg {
+  background-image: url(../img/pricing.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+.pricing .container {
+  padding: 100px 0 60px 0;
+}
+.pricing .container .pricingTitle {
+  font-size: 48px;
+  color: #FFFFFF;
+  text-align: center;
+  z-index: 999;
+}
+.pricing .container .pricingRow {
+  margin-top: 145px;
+  gap: 30px;
+}
+@media (min-width: 992px) {
+  .pricing .container .pricingRow {
+    gap: 0px;
+  }
+}
+.pricing .container .pricingRow .pricingCol {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+}
+@media (min-width: 992px) {
+  .pricing .container .pricingRow .pricingCol {
+    width: 32%;
+  }
+}
+.pricing .container .pricingRow .pricingCol .pricingContent {
+  position: relative;
+  width: 100%;
+  padding-top: 57px;
+  padding-bottom: 70px;
+  text-align: center;
+  background: #FFFFFF;
+  z-index: 999;
+}
+.pricing .container .pricingRow .pricingCol .pricingContent::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #4867c0, #329fec);
+}
+.pricing .container .pricingRow .pricingCol .pricingContent .pricingLevel {
+  font-size: 14px;
+  color: #4c4c4c;
+}
+.pricing .container .pricingRow .pricingCol .pricingContent .pricingPrice {
+  font-size: 60px;
+  color: #4c4c4c;
+  line-height: 0.75;
+  margin-top: 15px;
+}
+.pricing .container .pricingRow .pricingCol .pricingContent .pricingList {
+  margin-top: 59px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.pricing .container .pricingRow .pricingCol .pricingContent .pricingList li {
+  font-size: 14px;
+  color: #888888;
+}
+.pricing .container .pricingRow .pricingCol .pricingContent .pricingInfo {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #ff8416;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 34px;
+}
+.pricing .container .pricingRow .pricingCol .pricingContent .pricingInfo a {
+  display: block;
+  position: relative;
+  color: #FFFFFF;
+}
+.pricing .container .pricingRow .pricingCol .pricingContent .pricingButton {
+  width: 180px;
+  height: 54px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 42px;
+  display: block;
+  line-height: 52px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.pricingMiddle {
+  background-color: transparent !important;
+}
+.pricingMiddle .pricingLevel {
+  color: #fff !important;
+}
+.pricingMiddle .pricingPrice {
+  margin-top: 32px !important;
+  color: #fff !important;
+}
+.pricingMiddle .pricingList {
+  margin-top: 97px !important;
+}
+.pricingMiddle .pricingList li {
+  color: #fff !important;
+}
+.pricingMiddle .pricingInfo {
+  margin-top: 74px !important;
+}
+.pricingMiddle .pricingButton {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.middleBg {
+  top: 0px;
+  box-shadow: 0px 2px 54px black;
+  z-index: 9999;
+  background: linear-gradient(to right, #4867c0, #329fec);
+  color: white;
+  box-shadow: 0px 2px 54px rgba(0, 0, 0, 0.65);
+}
+@media (min-width: 992px) {
+  .middleBg {
+    top: -42px;
+    box-shadow: 0px 2px 54px black;
+    width: 36% !important;
+    z-index: 9999;
+    background: linear-gradient(to right, #4867c0, #329fec);
+    color: white;
+    box-shadow: 0px 2px 54px rgba(0, 0, 0, 0.65);
+  }
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  padding-top: 115px;
+  padding-bottom: 111px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+@media (min-width: 991px) {
+  .calendar {
+    padding-left: 104px;
+    padding-right: 104px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 767px) {
+  .calendar {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 576px) {
+  .calendar {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.calendar .container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .calendar .container {
+    flex-direction: row;
+  }
+}
+.calendar .container .calendarCol {
+  width: 100%;
+  padding: 0 15px;
+}
+.calendar .container .calendarCol .calendarTop {
+  background: linear-gradient(to right, #4867c0, #329fec);
+  display: flex;
+  color: #fff;
+  align-items: center;
+  width: 100%;
+  height: 68px;
+  padding-left: 26px;
+}
+.calendar .container .calendarCol .calendarTop .calendarImg {
+  width: 27px;
+  height: 25px;
+}
+.calendar .container .calendarCol .calendarTop .calendarImg img {
+  width: 100%;
+  height: 100%;
+}
+.calendar .container .calendarCol .calendarTop .calendarTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-left: 19px;
+}
+.calendar .container .calendarCol .calendarItems {
+  width: 100%;
+  padding-top: 55px;
+  background-color: #F0F2F6;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 61px;
+}
+.calendar .container .calendarCol .calendarItems :nth-child(4) {
+  padding-bottom: 0 !important;
+}
+.calendar .container .calendarCol .calendarItems .calendarContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 39px;
+  padding-bottom: 35px;
+  padding-right: 20px;
+  gap: 10px;
+}
+@media (min-width: 460px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent {
+    flex-direction: row;
+    gap: 0px;
+  }
+}
+.calendar .container .calendarCol .calendarItems .calendarContent .calendarItemImg {
+  width: 73px;
+  height: 73px;
+}
+@media (min-width: 576px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarItemImg {
+    width: 103px;
+    height: 103px;
+  }
+}
+.calendar .container .calendarCol .calendarItems .calendarContent .calendarItemImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.calendar .container .calendarCol .calendarItems .calendarContent .calendarDate {
+  margin-left: 0px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarDate {
+    margin-left: 44px;
+  }
+}
+@media (min-width: 1400px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarDate {
+    margin-left: 74px;
+  }
+}
+@media (min-width: 460px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarDate {
+    margin-left: 24px;
+    text-align: left;
+  }
+}
+.calendar .container .calendarCol .calendarItems .calendarContent .calendarDate .calendarHour {
+  font-size: 24px;
+  font-weight: 500;
+  color: #4c4c4c;
+  line-height: 0.75;
+}
+@media (min-width: 576px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarDate .calendarHour {
+    font-size: 30px;
+  }
+}
+.calendar .container .calendarCol .calendarItems .calendarContent .calendarDate .calendarType {
+  font-size: 13px;
+  font-weight: 500;
+  color: #4c4c4c;
+  margin-top: 6px;
+}
+@media (min-width: 576px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarDate .calendarType {
+    font-size: 14px;
+  }
+}
+@media (min-width: 460px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarDate .calendarType {
+    margin-top: 11px;
+  }
+}
+.calendar .container .calendarCol .calendarItems .calendarContent .calendarItemText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  text-align: center;
+}
+@media (min-width: 767px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarItemText {
+    margin-left: 51px;
+  }
+}
+@media (min-width: 1400px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarItemText {
+    margin-left: 111px;
+  }
+}
+@media (min-width: 460px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarItemText {
+    margin-left: 30px;
+    text-align: left;
+  }
+}
+.calendar .container .calendarCol .calendarItems .calendarContent .calendarItemText .calendarhead {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4c4c4c;
+}
+@media (min-width: 576px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarItemText .calendarhead {
+    font-size: 18px;
+  }
+}
+.calendar .container .calendarCol .calendarItems .calendarContent .calendarItemText .calendarGray {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+  margin-top: 2px;
+}
+@media (min-width: 576px) {
+  .calendar .container .calendarCol .calendarItems .calendarContent .calendarItemText .calendarGray {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */

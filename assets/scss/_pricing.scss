@@ -1,0 +1,149 @@
+.pricing{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  .pricingBg{
+    background-image: url(../img/pricing.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+  }
+  .container{
+    padding: 100px 0 60px 0;
+    .pricingTitle{
+      font-size: 48px;
+      color: #FFFFFF; 
+      text-align: center;
+      z-index: 999;
+    }
+    .pricingRow{
+      margin-top: 145px;
+      gap: 30px;
+      @media (min-width: 992px){
+        gap: 0px;
+      }
+      .pricingCol{
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        @media (min-width: 992px){
+          width: 32%;
+        }
+        .pricingContent{
+          position: relative;
+          width: 100%;
+          padding-top: 57px;
+          padding-bottom: 70px;
+          text-align: center;
+          background: #FFFFFF;
+          z-index: 999;
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #4867c0, #329fec);
+            }
+          .pricingLevel{
+            font-size: 14px;
+            color: #4c4c4c;
+          }
+          .pricingPrice{
+            font-size: 60px;
+            color: #4c4c4c;
+            line-height: 0.75;
+            margin-top: 15px;
+          }
+          .pricingList{
+            margin-top: 59px;
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            li{
+              font-size: 14px;
+              color: #888888;        
+            }
+          }
+          .pricingInfo{
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            background: #ff8416;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 34px;
+            a{
+              display: block;
+              position: relative;
+              color: #FFFFFF;
+            }
+          }
+          .pricingButton{
+            width: 180px;
+            height: 54px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 42px;
+            display: block;
+            line-height: 52px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
+.pricingMiddle {
+  background-color: transparent!important;
+  .pricingLevel {
+    color: #fff!important;
+  }
+  .pricingPrice {
+    margin-top: 32px!important;
+    color: #fff!important;
+  }
+  .pricingList {
+    margin-top: 97px!important;
+    li {
+      color: #fff!important;
+    }
+  }
+  .pricingInfo {
+    margin-top: 74px!important;
+  }
+  .pricingButton {
+    background: #fff!important;
+    color: #000!important;
+  }
+}
+
+.middleBg {
+  top: 0px;
+  box-shadow: 0px 2px 54px black;
+  z-index: 9999;
+  background: linear-gradient(to right, #4867c0, #329fec);
+  color: white;
+  box-shadow: 0px 2px 54px rgba(0,0,0,0.65);
+  @media (min-width: 992px){
+    top: -42px;
+    box-shadow: 0px 2px 54px black;
+    width: 36%!important;
+    z-index: 9999;
+    background: linear-gradient(to right, #4867c0, #329fec);
+    color: white;
+    box-shadow: 0px 2px 54px rgba(0,0,0,0.65);
+  }
+}
